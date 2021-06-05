@@ -114,6 +114,34 @@ public class UserController extends BaseApiController {
         return RestResponse.ok(user);
     }
 
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public RestResponse<User> register(@RequestBody @Valid UserCreateVM model) {
+
+        User existUser = userService.getUserByUserName(model.getUserName());
+        if (null != existUser) {
+            return new RestResponse<>(2, "用户已存在");
+        }
+        if (StringUtils.isBlank(model.getPassword())) {
+            return new RestResponse<>(3, "密码不能为空");
+        }
+
+        if (StringUtils.isBlank(model.getBirthDay())) {
+            model.setBirthDay(null);
+        }
+
+        User user = modelMapper.map(model, User.class);
+        String encodePwd = authenticationService.pwdEncode(model.getPassword());
+        user.setPassword(encodePwd);
+        user.setUserUuid(UUID.randomUUID().toString());
+        user.setCreateTime(new Date());
+        user.setLastActiveTime(new Date());
+        user.setDeleted(false);
+        userService.insertByFilter(user);
+
+        return RestResponse.ok(user);
+    }
+
+
 
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public RestResponse update(@RequestBody @Valid UserUpdateVM model) {
