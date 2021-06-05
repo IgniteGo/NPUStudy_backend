@@ -54,3 +54,185 @@
 2021-06-05 15:48:54.548 DEBUG 8740 --- [XNIO-1 task-5] r.c.H.n.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
 2021-06-05 15:48:54.548 DEBUG 8740 --- [XNIO-1 task-5] r.c.H.n.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
 2021-06-05 15:48:54.553 DEBUG 8740 --- [XNIO-1 task-5] r.c.H.n.r.T.getByGradeLevel              : <==      Total: 0
+2021-06-05 16:10:32.517  INFO 16068 --- [restartedMain] c.HHStudy.npustudy.NPUStudyApplication   : Starting NPUStudyApplication on DESKTOP-5S05IHQ with PID 16068 (C:\Users\WYH\Desktop\backend\NPUStudyBackend\target\classes started by WYH in C:\Users\WYH\Desktop\backend\NPUStudyBackend)
+2021-06-05 16:10:32.519  INFO 16068 --- [restartedMain] c.HHStudy.npustudy.NPUStudyApplication   : The following profiles are active: dev
+2021-06-05 16:10:32.591  INFO 16068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-05 16:10:32.591  INFO 16068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-05 16:10:33.278  INFO 16068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-05 16:10:33.279  INFO 16068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-06-05 16:10:33.338  INFO 16068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 0 repository interfaces.
+2021-06-05 16:10:33.663  INFO 16068 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'cacheConfig' of type [com.HHStudy.npustudy.configuration.spring.cache.CacheConfig$$EnhancerBySpringCGLIB$$474ce73e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-05 16:10:33.669  INFO 16068 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b6250784] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-05 16:10:33.906  WARN 16068 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-06-05 16:10:33.923  INFO 16068 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-06-05 16:10:33.923  INFO 16068 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1332 ms
+2021-06-05 16:10:34.954  INFO 16068 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b74dc24, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e2c3cb6, org.springframework.security.web.header.HeaderWriterFilter@70e94a16, org.springframework.web.filter.CorsFilter@69ed1284, org.springframework.security.web.authentication.logout.LogoutFilter@7313fe0, com.HHStudy.npustudy.configuration.spring.security.RestLoginAuthenticationFilter@13af6791, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@508e704b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bcd2214, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b3a59e3, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@eccd8f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9313bb4, org.springframework.security.web.session.SessionManagementFilter@76f464e8, org.springframework.security.web.access.ExceptionTranslationFilter@47fcd761, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@383f1f95]
+2021-06-05 16:10:35.331  INFO 16068 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2021-06-05 16:10:35.332  INFO 16068 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2021-06-05 16:10:35.723  INFO 16068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-05 16:10:36.335  INFO 16068 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2021-06-05 16:10:36.354  INFO 16068 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2021-06-05 16:10:36.361  INFO 16068 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2021-06-05 16:10:36.401  INFO 16068 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2021-06-05 16:10:36.404  INFO 16068 --- [restartedMain] c.HHStudy.npustudy.NPUStudyApplication   : Started NPUStudyApplication in 4.313 seconds (JVM running for 4.981)
+2021-06-05 16:10:40.171  INFO 16068 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 16:10:40.172  INFO 16068 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-05 16:10:40.179  INFO 16068 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-06-05 16:10:40.249  INFO 16068 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-05 16:10:40.376  INFO 16068 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-05 16:10:40.384 DEBUG 16068 --- [XNIO-1 task-1] r.c.H.n.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2021-06-05 16:10:40.384 DEBUG 16068 --- [XNIO-1 task-2] r.c.H.n.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2021-06-05 16:10:40.410 DEBUG 16068 --- [XNIO-1 task-2] r.c.H.n.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2021-06-05 16:10:40.410 DEBUG 16068 --- [XNIO-1 task-1] r.c.H.n.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2021-06-05 16:10:40.440 DEBUG 16068 --- [XNIO-1 task-2] r.c.H.n.r.T.getByGradeLevel              : <==      Total: 0
+2021-06-05 16:10:40.440 DEBUG 16068 --- [XNIO-1 task-1] r.c.H.n.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2021-06-05 16:10:40.445 DEBUG 16068 --- [XNIO-1 task-1] r.c.H.n.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2021-06-05 16:10:40.448 DEBUG 16068 --- [XNIO-1 task-1] r.c.H.n.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2021-06-05 16:10:40.444(Timestamp)
+2021-06-05 16:10:40.448 DEBUG 16068 --- [XNIO-1 task-1] r.c.H.n.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2021-06-05 16:10:44.441 DEBUG 16068 --- [XNIO-1 task-4] r.c.H.n.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2021-06-05 16:10:44.441 DEBUG 16068 --- [XNIO-1 task-4] r.c.H.n.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 1(Integer)
+2021-06-05 16:10:44.444 DEBUG 16068 --- [XNIO-1 task-4] r.c.H.n.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2021-06-05 16:10:44.448 DEBUG 16068 --- [XNIO-1 task-4] r.c.H.n.r.UserMapper.updateByPrimaryKey  : ==>  Preparing: update t_user set user_uuid = ?, user_name = ?, password = ?, real_name = ?, age = ?, sex = ?, birth_day = ?, user_level = ?, phone = ?, role = ?, status = ?, image_path = ?, create_time = ?, modify_time = ?, last_active_time = ?, deleted = ?, wx_open_id = ? where id = ? 
+2021-06-05 16:10:44.449 DEBUG 16068 --- [XNIO-1 task-4] r.c.H.n.r.UserMapper.updateByPrimaryKey  : ==> Parameters: d2d29da2-dcb3-4013-b874-727626236f47(String), student(String), D1AGFL+Gx37t0NPG4d6biYP5Z31cNbwhK5w1lUeiHB2zagqbk8efYfSjYoh1Z/j1dkiRjHU+b0EpwzCh8IGsksJjzD65ci5LsnodQVf4Uj6D3pwoscXGqmkjjpzvSJbx42swwNTA+QoDU8YLo7JhtbUK2X0qCjFGpd+8eJ5BGvk=(String), 学生(String), 18(Integer), 1(Integer), 2019-09-01 16:00:00.0(Timestamp), 1(Integer), 19171171610(String), 1(Integer), 1(Integer), http://xzs.file.mindskip.net/FijFVKZoIYmYMuyGmkAE_4KRyFld(String), 2019-09-07 18:55:02.0(Timestamp), 2021-06-05 16:10:44.444(Timestamp), null, false(Boolean), null, 1(Integer)
+2021-06-05 16:10:44.450 DEBUG 16068 --- [XNIO-1 task-4] r.c.H.n.r.UserMapper.updateByPrimaryKey  : <==    Updates: 1
+2021-06-05 16:10:44.454 DEBUG 16068 --- [XNIO-1 task-4] r.c.H.n.r.U.deleteByPrimaryKey           : ==>  Preparing: delete from t_user_token where id = ? 
+2021-06-05 16:10:44.454 DEBUG 16068 --- [XNIO-1 task-4] r.c.H.n.r.U.deleteByPrimaryKey           : ==> Parameters: 7(Integer)
+2021-06-05 16:10:44.457 DEBUG 16068 --- [XNIO-1 task-4] r.c.H.n.r.U.deleteByPrimaryKey           : <==    Updates: 1
+2021-06-05 16:10:50.776 DEBUG 16068 --- [XNIO-1 task-5] r.c.H.n.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2021-06-05 16:10:50.777 DEBUG 16068 --- [XNIO-1 task-5] r.c.H.n.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2021-06-05 16:10:50.774(Timestamp)
+2021-06-05 16:10:50.787 DEBUG 16068 --- [XNIO-1 task-5] r.c.H.n.r.U.insertSelective              : <==    Updates: 1
+2021-06-05 16:10:50.984 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2021-06-05 16:10:50.984 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:10:50.986 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:10:50.987 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2021-06-05 16:10:50.987 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2021-06-05 16:10:50.991 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2021-06-05 16:10:50.992 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2021-06-05 16:10:50.992 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:10:51.000 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:10:51.001 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2021-06-05 16:10:51.001 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:10:51.006 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:10:51.009 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2021-06-05 16:10:51.010 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.U.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
+2021-06-05 16:10:51.015 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.U.selectCountByDate            : <==      Total: 3
+2021-06-05 16:10:51.018 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2021-06-05 16:10:51.018 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
+2021-06-05 16:10:51.019 DEBUG 16068 --- [XNIO-1 task-6] r.c.H.n.r.E.selectCountByDate            : <==      Total: 0
+2021-06-05 16:11:33.478 DEBUG 16068 --- [XNIO-1 task-7] r.c.H.n.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2021-06-05 16:11:33.480 DEBUG 16068 --- [XNIO-1 task-7] r.c.H.n.r.UserMapper.userPage_COUNT      : ==> Parameters: 1(Integer)
+2021-06-05 16:11:33.481 DEBUG 16068 --- [XNIO-1 task-7] r.c.H.n.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2021-06-05 16:11:33.486 DEBUG 16068 --- [XNIO-1 task-8] r.c.H.n.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2021-06-05 16:11:33.486 DEBUG 16068 --- [XNIO-1 task-8] r.c.H.n.r.UserMapper.userPage_COUNT      : ==> Parameters: 3(Integer)
+2021-06-05 16:11:33.487 DEBUG 16068 --- [XNIO-1 task-7] r.c.H.n.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2021-06-05 16:11:33.487 DEBUG 16068 --- [XNIO-1 task-8] r.c.H.n.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2021-06-05 16:11:33.487 DEBUG 16068 --- [XNIO-1 task-7] r.c.H.n.repository.UserMapper.userPage   : ==> Parameters: 1(Integer), 10(Integer)
+2021-06-05 16:11:33.488 DEBUG 16068 --- [XNIO-1 task-8] r.c.H.n.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2021-06-05 16:11:33.488 DEBUG 16068 --- [XNIO-1 task-8] r.c.H.n.repository.UserMapper.userPage   : ==> Parameters: 3(Integer), 10(Integer)
+2021-06-05 16:11:33.489 DEBUG 16068 --- [XNIO-1 task-7] r.c.H.n.repository.UserMapper.userPage   : <==      Total: 2
+2021-06-05 16:11:33.489 DEBUG 16068 --- [XNIO-1 task-8] r.c.H.n.repository.UserMapper.userPage   : <==      Total: 1
+2021-06-05 16:12:36.167 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2021-06-05 16:12:36.168 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:12:36.169 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:12:36.169 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2021-06-05 16:12:36.170 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2021-06-05 16:12:36.171 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2021-06-05 16:12:36.172 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2021-06-05 16:12:36.172 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:12:36.173 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:12:36.174 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2021-06-05 16:12:36.175 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:12:36.177 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:12:36.178 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2021-06-05 16:12:36.179 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.U.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
+2021-06-05 16:12:36.180 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.U.selectCountByDate            : <==      Total: 3
+2021-06-05 16:12:36.181 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2021-06-05 16:12:36.182 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
+2021-06-05 16:12:36.182 DEBUG 16068 --- [XNIO-1 task-9] r.c.H.n.r.E.selectCountByDate            : <==      Total: 0
+2021-06-05 16:13:05.527 DEBUG 16068 --- [XNIO-1 task-10] r.c.H.n.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2021-06-05 16:13:05.528 DEBUG 16068 --- [XNIO-1 task-10] r.c.H.n.r.UserMapper.userPage_COUNT      : ==> Parameters: 3(Integer)
+2021-06-05 16:13:05.528 DEBUG 16068 --- [XNIO-1 task-10] r.c.H.n.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2021-06-05 16:13:05.532 DEBUG 16068 --- [XNIO-1 task-10] r.c.H.n.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2021-06-05 16:13:05.532 DEBUG 16068 --- [XNIO-1 task-10] r.c.H.n.repository.UserMapper.userPage   : ==> Parameters: 3(Integer), 10(Integer)
+2021-06-05 16:13:05.534 DEBUG 16068 --- [XNIO-1 task-10] r.c.H.n.repository.UserMapper.userPage   : <==      Total: 1
+2021-06-05 16:20:06.840 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2021-06-05 16:20:06.840 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:20:06.841 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:20:06.842 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2021-06-05 16:20:06.842 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2021-06-05 16:20:06.842 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2021-06-05 16:20:06.843 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2021-06-05 16:20:06.843 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:20:06.844 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:20:06.844 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2021-06-05 16:20:06.844 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:20:06.846 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:20:06.848 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2021-06-05 16:20:06.848 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.U.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
+2021-06-05 16:20:06.849 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.U.selectCountByDate            : <==      Total: 3
+2021-06-05 16:20:06.850 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2021-06-05 16:20:06.851 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
+2021-06-05 16:20:06.851 DEBUG 16068 --- [XNIO-1 task-11] r.c.H.n.r.E.selectCountByDate            : <==      Total: 0
+2021-06-05 16:20:08.436 DEBUG 16068 --- [XNIO-1 task-12] r.c.H.n.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2021-06-05 16:20:08.437 DEBUG 16068 --- [XNIO-1 task-12] r.c.H.n.r.UserMapper.userPage_COUNT      : ==> Parameters: 3(Integer)
+2021-06-05 16:20:08.438 DEBUG 16068 --- [XNIO-1 task-12] r.c.H.n.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2021-06-05 16:20:08.439 DEBUG 16068 --- [XNIO-1 task-12] r.c.H.n.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2021-06-05 16:20:08.440 DEBUG 16068 --- [XNIO-1 task-12] r.c.H.n.repository.UserMapper.userPage   : ==> Parameters: 3(Integer), 10(Integer)
+2021-06-05 16:20:08.442 DEBUG 16068 --- [XNIO-1 task-12] r.c.H.n.repository.UserMapper.userPage   : <==      Total: 1
+2021-06-05 16:20:13.880 DEBUG 16068 --- [XNIO-1 task-13] r.c.H.n.r.UserMapper.getUserById         : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id=? 
+2021-06-05 16:20:13.880 DEBUG 16068 --- [XNIO-1 task-13] r.c.H.n.r.UserMapper.getUserById         : ==> Parameters: 2(Integer)
+2021-06-05 16:20:13.881 DEBUG 16068 --- [XNIO-1 task-13] r.c.H.n.r.UserMapper.getUserById         : <==      Total: 1
+2021-06-05 16:20:17.477 DEBUG 16068 --- [XNIO-1 task-14] r.c.H.n.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2021-06-05 16:20:17.477 DEBUG 16068 --- [XNIO-1 task-14] r.c.H.n.r.UserMapper.userPage_COUNT      : ==> Parameters: 3(Integer)
+2021-06-05 16:20:17.478 DEBUG 16068 --- [XNIO-1 task-14] r.c.H.n.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2021-06-05 16:20:17.479 DEBUG 16068 --- [XNIO-1 task-14] r.c.H.n.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2021-06-05 16:20:17.479 DEBUG 16068 --- [XNIO-1 task-14] r.c.H.n.repository.UserMapper.userPage   : ==> Parameters: 3(Integer), 10(Integer)
+2021-06-05 16:20:17.479 DEBUG 16068 --- [XNIO-1 task-14] r.c.H.n.repository.UserMapper.userPage   : <==      Total: 1
+2021-06-05 16:20:23.510 DEBUG 16068 --- [XNIO-1 task-15] r.c.H.n.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2021-06-05 16:20:23.511 DEBUG 16068 --- [XNIO-1 task-15] r.c.H.n.r.UserMapper.userPage_COUNT      : ==> Parameters: 3(Integer)
+2021-06-05 16:20:23.511 DEBUG 16068 --- [XNIO-1 task-15] r.c.H.n.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2021-06-05 16:20:23.512 DEBUG 16068 --- [XNIO-1 task-15] r.c.H.n.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2021-06-05 16:20:23.512 DEBUG 16068 --- [XNIO-1 task-15] r.c.H.n.repository.UserMapper.userPage   : ==> Parameters: 3(Integer), 10(Integer)
+2021-06-05 16:20:23.513 DEBUG 16068 --- [XNIO-1 task-15] r.c.H.n.repository.UserMapper.userPage   : <==      Total: 1
+2021-06-05 16:31:00.241 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2021-06-05 16:31:00.241 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:31:00.241 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:31:00.242 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2021-06-05 16:31:00.242 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2021-06-05 16:31:00.248 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2021-06-05 16:31:00.249 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2021-06-05 16:31:00.249 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:31:00.249 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:31:00.250 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2021-06-05 16:31:00.250 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:31:00.250 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:31:00.251 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2021-06-05 16:31:00.251 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.U.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
+2021-06-05 16:31:00.252 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.U.selectCountByDate            : <==      Total: 3
+2021-06-05 16:31:00.253 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2021-06-05 16:31:00.253 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
+2021-06-05 16:31:00.254 DEBUG 16068 --- [XNIO-1 task-17] r.c.H.n.r.E.selectCountByDate            : <==      Total: 0
+2021-06-05 16:31:02.865 DEBUG 16068 --- [XNIO-1 task-18] r.c.H.n.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2021-06-05 16:31:02.866 DEBUG 16068 --- [XNIO-1 task-18] r.c.H.n.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登出了学之思开源考试系统(String), 2021-06-05 16:31:02.864(Timestamp)
+2021-06-05 16:31:02.870 DEBUG 16068 --- [XNIO-1 task-18] r.c.H.n.r.U.insertSelective              : <==    Updates: 1
+2021-06-05 16:31:21.979 DEBUG 16068 --- [XNIO-1 task-19] r.c.H.n.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2021-06-05 16:31:21.980 DEBUG 16068 --- [XNIO-1 task-19] r.c.H.n.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2021-06-05 16:31:21.978(Timestamp)
+2021-06-05 16:31:21.983 DEBUG 16068 --- [XNIO-1 task-19] r.c.H.n.r.U.insertSelective              : <==    Updates: 1
+2021-06-05 16:31:22.395 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2021-06-05 16:31:22.396 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:31:22.397 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:31:22.397 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2021-06-05 16:31:22.397 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2021-06-05 16:31:22.398 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2021-06-05 16:31:22.398 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2021-06-05 16:31:22.398 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:31:22.399 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:31:22.399 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2021-06-05 16:31:22.400 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectAllCount               : ==> Parameters: 
+2021-06-05 16:31:22.400 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectAllCount               : <==      Total: 1
+2021-06-05 16:31:22.402 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2021-06-05 16:31:22.402 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.U.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
+2021-06-05 16:31:22.403 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.U.selectCountByDate            : <==      Total: 3
+2021-06-05 16:31:22.404 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2021-06-05 16:31:22.404 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
+2021-06-05 16:31:22.405 DEBUG 16068 --- [XNIO-1 task-20] r.c.H.n.r.E.selectCountByDate            : <==      Total: 0
