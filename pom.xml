@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mindskip</groupId>
-    <artifactId>xzs</artifactId>
-    <version>3.3.0</version>
+    <groupId>com.HHStudy</groupId>
+    <artifactId>NPUStudy</artifactId>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
 
-    <name>xzs</name>
+    <name>NPUStudy</name>
     <url>https://www.mindskip.net/xzs.html</url>
     <description>学之思开源考试系统 - 武汉思维跳跃科技有限公司</description>
     <licenses>

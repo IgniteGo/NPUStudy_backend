@@ -9,13 +9,9 @@ import com.HHStudy.npustudy.domain.UserEventLog;
 import com.HHStudy.npustudy.domain.enums.RoleEnum;
 import com.HHStudy.npustudy.domain.enums.UserStatusEnum;
 import com.HHStudy.npustudy.event.UserEvent;
-import com.HHStudy.npustudy.service.AuthenticationService;
-import com.HHStudy.npustudy.service.MessageService;
-import com.HHStudy.npustudy.service.UserEventLogService;
-import com.HHStudy.npustudy.service.UserService;
+import com.HHStudy.npustudy.service.*;
 import com.HHStudy.npustudy.utility.DateTimeUtil;
 import com.HHStudy.npustudy.utility.PageInfoHelper;
-import com.HHStudy.npustudy.viewmodel.student.user.*;
 import com.HHStudy.npustudy.viewmodel.student.user.*;
 import com.github.pagehelper.PageInfo;
 import org.apache.commons.lang3.StringUtils;
@@ -23,8 +19,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -44,14 +43,31 @@ public class UserController extends BaseWXApiController {
     private final MessageService messageService;
     private final AuthenticationService authenticationService;
     private final ApplicationEventPublisher eventPublisher;
+    private final FileUpload fileUpload;
 
     @Autowired
-    public UserController(UserService userService, UserEventLogService userEventLogService, MessageService messageService, AuthenticationService authenticationService, ApplicationEventPublisher eventPublisher) {
+    public UserController(UserService userService, UserEventLogService userEventLogService, MessageService messageService, AuthenticationService authenticationService, ApplicationEventPublisher eventPublisher, FileUpload fileUpload) {
         this.userService = userService;
         this.userEventLogService = userEventLogService;
         this.messageService = messageService;
         this.authenticationService = authenticationService;
         this.eventPublisher = eventPublisher;
+        this.fileUpload = fileUpload;
+    }
+
+    @RequestMapping(value = "/image", method = RequestMethod.POST)
+    @ResponseBody
+    public RestResponse questionUploadAndReadExcel(@RequestParam("file") MultipartFile multipartFile) {
+        System.out.println(1111);
+        long attachSize = multipartFile.getSize();
+        String imgName = multipartFile.getOriginalFilename();
+        try (InputStream inputStream = multipartFile.getInputStream()) {
+            String filePath = fileUpload.uploadFile(inputStream, attachSize, imgName);
+            userService.changePicture(getCurrentUser(), filePath);
+            return RestResponse.ok(filePath);
+        } catch (IOException e) {
+            return RestResponse.fail(2, e.getMessage());
+        }
     }
 
     @RequestMapping(value = "/current", method = RequestMethod.POST)
