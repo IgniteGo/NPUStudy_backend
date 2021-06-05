@@ -198,7 +198,7 @@ Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.
 2021-06-02 14:52:18.373 DEBUG 6204 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
 2021-06-02 14:52:19.873 DEBUG 6204 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
 2021-06-02 14:52:21.426 DEBUG 6204 --- [XNIO-1 task-4] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? )
-2021-06-02 14:52:21.451 DEBUG 6204 --- [XNIO-1 task-4] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2021-06-02 14:52:21.379(Timestamp)
+2021-06-02 14:52:21.451 DEBUG 6204 --- [XNIO-1 task-4] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了小瓜答题宝(String), 2021-06-02 14:52:21.379(Timestamp)
 2021-06-02 14:52:22.182 DEBUG 6204 --- [XNIO-1 task-4] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
 2021-06-02 14:52:22.454 DEBUG 6204 --- [XNIO-1 task-5] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0
 2021-06-02 14:52:22.455 DEBUG 6204 --- [XNIO-1 task-5] r.c.m.x.r.E.selectAllCount               : ==> Parameters:
@@ -416,7 +416,7 @@ Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.
 2021-06-02 15:09:15.392 DEBUG 2540 --- [XNIO-1 task-23] r.c.m.x.r.UserMapper.insertSelective     : ==> Parameters: a88e6667-442e-4e3d-9a70-8ac480300265(String), hyq(String), JRDDhkzGvzsPxbm8+gSc0SwCfvAJqSWE5yl86dEbR91SCnICpUwzwUgbghtEZkd87YA0GylqQ/34edlhobo2l6AHB5fmnzB6SswbXJhcNKEu+LP8lNQy9TQuPMobRtBRaiOs6HyQkYbE7luZ6YRs2BR7J8eMtJ0S+NTiH/aZMn0=(String), 1(Integer), 1(Integer), 1(Integer), 2021-06-02 15:09:15.389(Timestamp), 2021-06-02 15:09:15.389(Timestamp), false(Boolean)
 2021-06-02 15:09:15.504 DEBUG 2540 --- [XNIO-1 task-23] r.c.m.x.r.UserMapper.insertSelective     : <==    Updates: 1
 2021-06-02 15:09:15.507 DEBUG 2540 --- [XNIO-1 task-23] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, content, create_time ) values ( ?, ?, ?, ? )
-2021-06-02 15:09:15.507 DEBUG 2540 --- [XNIO-1 task-23] r.c.m.x.r.U.insertSelective              : ==> Parameters: 3(Integer), hyq(String), 欢迎 hyq 注册来到学之思开源考试系统(String), 2021-06-02 15:09:15.506(Timestamp)
+2021-06-02 15:09:15.507 DEBUG 2540 --- [XNIO-1 task-23] r.c.m.x.r.U.insertSelective              : ==> Parameters: 3(Integer), hyq(String), 欢迎 hyq 注册来到小瓜答题宝(String), 2021-06-02 15:09:15.506(Timestamp)
 2021-06-02 15:09:15.587 DEBUG 2540 --- [XNIO-1 task-23] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
 2021-06-02 15:09:19.733 DEBUG 2540 --- [XNIO-1 task-24] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1
 2021-06-02 15:09:19.733 DEBUG 2540 --- [XNIO-1 task-24] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: hyq(String)
@@ -680,10 +680,10 @@ Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.
 2021-06-02 15:28:45.674 DEBUG 2540 --- [XNIO-1 task-78] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
 2021-06-02 15:28:45.674 DEBUG 2540 --- [XNIO-1 task-78] r.c.m.x.r.E.selectCountByDate            : <==      Total: 0
 2021-06-02 15:28:47.606 DEBUG 2540 --- [XNIO-1 task-79] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? )
-2021-06-02 15:28:47.608 DEBUG 2540 --- [XNIO-1 task-79] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登出了学之思开源考试系统(String), 2021-06-02 15:28:47.604(Timestamp)
+2021-06-02 15:28:47.608 DEBUG 2540 --- [XNIO-1 task-79] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登出了小瓜答题宝(String), 2021-06-02 15:28:47.604(Timestamp)
 2021-06-02 15:28:47.793 DEBUG 2540 --- [XNIO-1 task-79] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
 2021-06-02 15:29:00.808 DEBUG 2540 --- [XNIO-1 task-80] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? )
-2021-06-02 15:29:00.808 DEBUG 2540 --- [XNIO-1 task-80] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2021-06-02 15:29:00.807(Timestamp)
+2021-06-02 15:29:00.808 DEBUG 2540 --- [XNIO-1 task-80] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了小瓜答题宝(String), 2021-06-02 15:29:00.807(Timestamp)
 2021-06-02 15:29:00.956 DEBUG 2540 --- [XNIO-1 task-80] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
 2021-06-02 15:29:01.057 DEBUG 2540 --- [XNIO-1 task-81] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0
 2021-06-02 15:29:01.057 DEBUG 2540 --- [XNIO-1 task-81] r.c.m.x.r.E.selectAllCount               : ==> Parameters:
@@ -740,13 +740,13 @@ Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.
 2021-06-02 15:29:34.196 DEBUG 2540 --- [XNIO-1 task-86] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2021-06-01 00:00:00.0(Timestamp), 2021-06-30 23:59:59.0(Timestamp)
 2021-06-02 15:29:34.197 DEBUG 2540 --- [XNIO-1 task-86] r.c.m.x.r.E.selectCountByDate            : <==      Total: 0
 2021-06-02 15:29:36.052 DEBUG 2540 --- [XNIO-1 task-87] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? )
-2021-06-02 15:29:36.053 DEBUG 2540 --- [XNIO-1 task-87] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登出了学之思开源考试系统(String), 2021-06-02 15:29:36.052(Timestamp)
+2021-06-02 15:29:36.053 DEBUG 2540 --- [XNIO-1 task-87] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登出了小瓜答题宝(String), 2021-06-02 15:29:36.052(Timestamp)
 2021-06-02 15:29:36.207 DEBUG 2540 --- [XNIO-1 task-87] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
 2021-06-02 15:29:41.890 DEBUG 2540 --- [XNIO-1 task-88] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1
 2021-06-02 15:29:41.890 DEBUG 2540 --- [XNIO-1 task-88] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin2(String)
 2021-06-02 15:29:41.891 DEBUG 2540 --- [XNIO-1 task-88] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
 2021-06-02 15:29:41.897 DEBUG 2540 --- [XNIO-1 task-88] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? )
-2021-06-02 15:29:41.899 DEBUG 2540 --- [XNIO-1 task-88] r.c.m.x.r.U.insertSelective              : ==> Parameters: 4(Integer), admin2(String), hyq(String), admin2 登录了学之思开源考试系统(String), 2021-06-02 15:29:41.896(Timestamp)
+2021-06-02 15:29:41.899 DEBUG 2540 --- [XNIO-1 task-88] r.c.m.x.r.U.insertSelective              : ==> Parameters: 4(Integer), admin2(String), hyq(String), admin2 登录了小瓜答题宝(String), 2021-06-02 15:29:41.896(Timestamp)
 2021-06-02 15:29:42.129 DEBUG 2540 --- [XNIO-1 task-88] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
 2021-06-02 15:29:42.212 DEBUG 2540 --- [XNIO-1 task-89] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0
 2021-06-02 15:29:42.213 DEBUG 2540 --- [XNIO-1 task-89] r.c.m.x.r.E.selectAllCount               : ==> Parameters:
@@ -919,7 +919,7 @@ Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.
 2021-06-02 15:38:09.364 DEBUG 17024 --- [XNIO-1 task-6] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
 2021-06-02 15:38:09.368 DEBUG 17024 --- [XNIO-1 task-6] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
 2021-06-02 15:42:18.695 DEBUG 17024 --- [XNIO-1 task-12] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? )
-2021-06-02 15:42:18.696 DEBUG 17024 --- [XNIO-1 task-12] r.c.m.x.r.U.insertSelective              : ==> Parameters: 1(Integer), student(String), 学生(String), student 登录了学之思开源考试系统(String), 2021-06-02 15:42:18.693(Timestamp)
+2021-06-02 15:42:18.696 DEBUG 17024 --- [XNIO-1 task-12] r.c.m.x.r.U.insertSelective              : ==> Parameters: 1(Integer), student(String), 学生(String), student 登录了小瓜答题宝(String), 2021-06-02 15:42:18.693(Timestamp)
 2021-06-02 15:42:18.702 DEBUG 17024 --- [XNIO-1 task-12] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
 2021-06-02 15:42:18.926 DEBUG 17024 --- [XNIO-1 task-13] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ?
 2021-06-02 15:42:18.927 DEBUG 17024 --- [XNIO-1 task-13] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
@@ -961,7 +961,7 @@ Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.
 2021-06-02 15:44:46.707 DEBUG 17024 --- [XNIO-1 task-25] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
 2021-06-02 15:44:46.709 DEBUG 17024 --- [XNIO-1 task-25] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
 2021-06-02 15:44:46.715 DEBUG 17024 --- [XNIO-1 task-25] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? )
-2021-06-02 15:44:46.716 DEBUG 17024 --- [XNIO-1 task-25] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2021-06-02 15:44:46.715(Timestamp)
+2021-06-02 15:44:46.716 DEBUG 17024 --- [XNIO-1 task-25] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了小瓜答题宝(String), 2021-06-02 15:44:46.715(Timestamp)
 2021-06-02 15:44:46.719 DEBUG 17024 --- [XNIO-1 task-25] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
 2021-06-02 15:44:46.975 DEBUG 17024 --- [XNIO-1 task-26] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0
 2021-06-02 15:44:46.975 DEBUG 17024 --- [XNIO-1 task-26] r.c.m.x.r.E.selectAllCount               : ==> Parameters:

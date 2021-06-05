@@ -39,7 +39,7 @@ public class RestAuthenticationSuccessHandler extends SimpleUrlAuthenticationSuc
         User springUser = (User) authentication.getPrincipal();
         com.HHStudy.npustudy.domain.User user = userService.getUserByUserName(springUser.getUsername());
         UserEventLog userEventLog = new UserEventLog(user.getId(), user.getUserName(), user.getRealName(), new Date());
-        userEventLog.setContent(user.getUserName() + " 登录了学之思开源考试系统");
+        userEventLog.setContent(user.getUserName() + " 登录了小瓜答题宝");
         eventPublisher.publishEvent(new UserEvent(userEventLog));
         com.HHStudy.npustudy.domain.User newUser = new com.HHStudy.npustudy.domain.User();
         newUser.setUserName(user.getUserName());
