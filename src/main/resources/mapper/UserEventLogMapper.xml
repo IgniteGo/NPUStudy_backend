@@ -127,7 +127,7 @@
          and user_id= #{userId}
       </if>
       <if test="userName != null">
-        and user_name= #{userName}
+        and  user_name like concat('%',#{userName},'%')
       </if>
     </where>
   </select>
