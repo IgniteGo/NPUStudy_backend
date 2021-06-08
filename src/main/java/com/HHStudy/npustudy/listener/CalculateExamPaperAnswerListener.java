@@ -53,6 +53,7 @@ public class CalculateExamPaperAnswerListener implements ApplicationListener<Cal
             textContentService.insertByFilter(textContent);
             d.setTextContentId(textContent.getId());
             d.setAnswer(null);
+//            d.setAnswer(d.getAnswer());
         });
         examPaperQuestionCustomerAnswers.forEach(d -> {
             d.setExamPaperAnswerId(examPaperAnswer.getId());
